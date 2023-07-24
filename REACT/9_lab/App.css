@@ -1,0 +1,142 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+}
+
+/* SortTable.css */
+.my-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.my-table__head th {
+  background-color: #f2f2f2;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.my-table__body td {
+  padding: 10px;
+}
+
+.my-table__body td:nth-child(4) {
+  text-align: center;
+}
+
+.my-table__body td[style*="red"] {
+  background-color: red;
+}
+
+.my-table__body td[style*="yellow"] {
+  background-color: yellow;
+}
+
+/* Catalog.css */
+.catalog {
+  padding: 20px;
+}
+
+.catalog-heading {
+  margin-bottom: 20px;
+}
+
+.catalog-sort {
+  margin-bottom: 20px;
+}
+
+.sort-label {
+  margin-right: 10px;
+}
+
+.sort-button {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 5px 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.catalog-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.product-image {
+  text-align: center;
+
+
+}
+
+.product-thumbnail {
+
+  height: 150px;
+  object-fit: cover;
+}
+
+.product-details {
+  padding: 10px;
+}
+
+.product-name {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.product-description {
+  margin-bottom: 10px;
+}
+
+.product-tag {
+  background-color: #ff9800;
+  color: #fff;
+  padding: 3px 6px;
+  font-size: 12px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.product-price {
+  margin-bottom: 10px;
+}
+
+.product-discounted-price {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 5px;
+  color: #e53935;
+}
+
+.product-original-price {
+  font-size: 14px;
+  color: #464646;
+  
+}
+
+.product-stock {
+  border-radius: 10px;
+  padding: 5px;
+  color: #1b1b1b;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  background: #cecece;
+}
+
+.product-stock[style*="red"] {
+  background-color: rgb(181, 94, 94);
+}
+
+.product-stock[style*="yellow"] {
+  background-color: yellow;
+}

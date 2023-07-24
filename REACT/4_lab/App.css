@@ -1,0 +1,55 @@
+.calendar {
+    margin-left: auto;
+    margin-right: auto;
+    width: 26%;
+    text-align: center;
+    border: solid #3b3b3b;
+    border-width: 3px;
+    border-radius: 15px;
+    margin-top: 25vh;
+  }
+  
+  
+    table {
+    
+    width: 50vh;
+    height: 50vh;
+    border-radius: 15px;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+  }
+    
+  .not-current {
+    
+    border-radius: 5px;
+    background-color: #ccc;
+  }
+  
+.selected {
+    border-radius: 15px;
+    background-color: #007bff;
+    color: #fff;
+  }
+  button{
+    background: #ccc;
+    border: none;
+    border-radius: 5px;
+    width: 30px;
+    height: 20px;
+  }
+  td{
+width: 5vh;
+height: 5vh;
+  }
+  .calendar-head{
+    text-size-adjust: 20px;
+  }
+  .thead{
+    size: 1000px;
+  }
+
+  .today {
+    background-color: rgb(37, 255, 219);
+    border-radius: 15px;
+  }

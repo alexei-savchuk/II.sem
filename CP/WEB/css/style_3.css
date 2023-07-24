@@ -1,0 +1,122 @@
+.container {
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .text {
+    size: 15px;
+    font-family: 'Muli', sans-serif;
+    width: 100%;
+    max-width: 600px;
+
+  }
+  .text p{
+    margin-left: 0%;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.5;
+
+  }
+  
+  .image {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 3%;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .container {
+      flex-direction: row;
+    }
+    
+    .text {
+      margin-right: 4rem;
+    }
+  }
+
+.premm{
+  text-align: center;
+  font-family: 'Muli', sans-serif;
+}
+
+
+.section-container{
+  margin-top: 10%;
+}
+  section {
+    margin-top: 1%;
+   
+    width: 100%;
+    /*   skew adds a 4.76 degree slope and the translateY equation is based on the fact that a 4.76 degree slope has a gradient of 1:12 */
+    -webkit-transform: skew(0, -4.76deg) translateY(calc(50vw/-12));
+        -ms-transform: skew(0, -4.76deg) translateY(calc(50vw/-12));
+            transform: skew(0, -4.76deg) translateY(calc(50vw/-12));
+    /*   And finally we account for the slope to make sure each section can occupy the full window... I added 10vw just to give it a little extra padding */
+    min-height: calc(100vh - (110vw/-12));
+  }
+  
+  section:not(:last-child) *{
+    -webkit-transform: skew(0, 4.76deg) translateY(calc(50vw/12));
+        -ms-transform: skew(0, 4.76deg) translateY(calc(50vw/12));
+            transform: skew(0, 4.76deg) translateY(calc(50vw/12));
+    margin-top: calc(50vw/-12);
+  }
+    
+  section:last-child {
+    position: relative;
+    -webkit-transform: skew(0);
+        -ms-transform: skew(0);
+            transform: skew(0);
+    margin-top: calc(100vw/-12);
+    padding-top: calc(100vw/12);
+    min-height: 100vh;
+    z-index: -1;
+  }
+  
+  
+  
+  
+  
+  /* COLORS AND OTHER STYLES TO ILLUSTRATE SECTIONS */
+  section:nth-child(1) {
+    background:linear-gradient(rgba(0, 0, 0, 0.626),rgba(0, 0, 0, 0.616)),url('/images/pred_1.png');
+  }
+  section:nth-child(2) {
+    background:linear-gradient(rgba(0, 0, 0, 0.626),rgba(0, 0, 0, 0.616)),url('/images/pred_2.png');
+  }
+  section:nth-child(3) {
+    background:linear-gradient(rgba(0, 0, 0, 0.626),rgba(0, 0, 0, 0.616)),url('/images/pred_3.png');
+  }
+  section:nth-child(4) {
+    background:linear-gradient(rgba(0, 0, 0, 0.626),rgba(0, 0, 0, 0.616)),url('/images/pred_4.png');
+  }
+  
+  section{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  h1{
+    font-family: sans-serif;
+    color: #fff;
+  }
+
+
+  

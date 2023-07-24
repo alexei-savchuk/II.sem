@@ -1,0 +1,92 @@
+.notes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-container label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="date"],
+.form-container textarea {
+  width: 300px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-container input[type="submit"],
+.note-wrapper button {
+  font-size: larger;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #ffd900;
+  color: #000000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.form-container input[type="submit"]:hover,
+.note-wrapper button:hover {
+  background-color: #b38300;
+}
+
+.note-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 400px;
+  border: solid black 2px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  background-color: yellow;
+}
+
+.note-wrapper:nth-of-type(n+8) {
+  background-color: red;
+}
+
+.note-wrapper:nth-of-type(8)::before {
+  content: "У вас слишком много заметок";
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.note-wrapper h3 {
+  margin-bottom: 10px;
+}
+
+.note-wrapper p {
+  margin-bottom: 5px;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin-top: 20px;
+}
